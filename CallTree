@@ -1,0 +1,13 @@
+hanoi(3, A, C, B)
+│
+├── hanoi(2, A, B, C)
+│   ├── hanoi(1, A, C, B)
+│   ├── Move disk 2 from A to B
+│   └── hanoi(1, C, B, A)
+│
+├── Move disk 3 from A to C
+│
+└── hanoi(2, B, C, A)
+    ├── hanoi(1, B, A, C)
+    ├── Move disk 2 from B to C
+    └── hanoi(1, A, C, B)
